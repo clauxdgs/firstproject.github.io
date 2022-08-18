@@ -8,20 +8,28 @@ function ShowCarList(array){
     for(let i = 0; i < array.products.length; i++){ 
         let car = array.products[i];
         htmlContentToAppend += `
-        <div class="list-group-item list-group-item-action" style="max-width:95%;" border-color: #117A65;">
+        <div class="list-group-item list-group-item-action contenedor_listado">
             <div class="row">
              
                 <div class="col-10">
+
                     <div class="d-flex w-100 justify-content-between">
-                        <div class="mb-1" style="margin:25px; margin-left: 70px;">
-                        <h2  style=" font-weight: bolder; color: #117A65;">`+ car.name  +`</h2> 
-                        <p style="font-style:  italic;"> `+ car.description +`</p> 
-                        <p><strong style="color: #117A65;">Precio: </strong> ` + car.cost +'  <strong style="color: #117A65;">' + car.currency+ `</strong>  </p>
+                        <div class="mb-1 info_products" style="margin:25px; margin-left: 70px;">
+                        
+                        <h2  class="name_products">`+ car.name  +`</h2> 
+                        
+                        <p class="descripcion_productos" style="font-style:  italic;"> `+ car.description +`</p>
+
+                        <br><br><br><hr>
+
+                        <p class="precio"><strong class="strong_products">Precio: </strong> ` + car.cost +'  <strong class="strong_products">' + car.currency+ `</strong>  </p>
                         </div>
+                      
                         <div class="col-3" style="width :45%; aling-items:center;">
-                        <img src="` + car.image + `" alt="product image"  class="img-thumbnail" style="background-color:#117A65; width=50%" id="image_car">
-                        </div> 
-                </div>
+                        <img src="` + car.image + `" alt="product image"  class="img-thumbnail imagen_productos"  id="image_car">
+                        </div>
+
+                    </div>
                 
 
                 </div>

@@ -200,11 +200,11 @@ a.custom-card:hover {
 }
 
 #image_car {
-  transition: transform .2s;
+  transition: transform .5s;
 }
 
 #image_car:hover {
-  transform: scale(1.3);
+  transform: scale(1.4);
   cursor:zoom-in;
 }
 
@@ -292,4 +292,41 @@ a.custom-card:hover {
 }
 .nav-link:hover{
   color: #fff !important;
+}
+.descripcion_productos{
+  width: 50%;
+}
+.imagen_productos{
+  background-color:#117A65;
+  width: 80%;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+.info_products{
+  margin: 10%;
+  width: 80%;
+  font-size: 15px;
+}
+.precio{
+  font-size: 20px;
+  background-color:#BFC9CA ;
+  text-align: center;
+  color: black;
+  font-weight: 400;
+}
+.strong_products{
+ color: #117A65;
+}
+.name_products{
+ font-weight: bolder; 
+ color: #117A65;
+ font-size: 45px;
+}
+.contenedor_listado{
+ max-width:90%; 
+ border-color:#117A65;
+ border: #117A65 3px solid;
+}
+.contenedor_listado:hover{
+  background-color: #bde7de;
 }
