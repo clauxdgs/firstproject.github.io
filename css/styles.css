@@ -3,7 +3,7 @@
 .container,
 .site-header {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+ }
 
 .jumbotron .display-4 {
   font-weight: bold;
@@ -255,6 +255,7 @@ a.custom-card:hover {
   color: #117A65;
   font-weight: bold;
   margin: 5px;
+ 
 
 }
 
