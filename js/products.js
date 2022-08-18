@@ -8,7 +8,7 @@ function ShowCarList(array){
     for(let i = 0; i < array.products.length; i++){ 
         let car = array.products[i];
         htmlContentToAppend += `
-        <div class="list-group-item list-group-item-action" style="max-width:95%;" border-color: #117A65; border-radius: 15%;">
+        <div class="list-group-item list-group-item-action" style="max-width:95%;" border-color: #117A65;">
             <div class="row">
              
                 <div class="col-10">
