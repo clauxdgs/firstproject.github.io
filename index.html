@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es" >
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>eMercado - Todo lo que busques está aquí</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body id="body_login">
+  <main>
+    <div class="container">
+        <div class="container">
+          <div class="d-flex justify-content-center h-100">
+            <div class="user_card">
+              
+              <div class="card-header mx-auto">
+                <img src="img/login.png" alt="image login" id="imagenlogin">
+                <h3 id="inicio_login">Inicio de Sesión</h3>
+                
+              <div class="card-body">
+                  <form action="screen1.html"  id="formulario">
+                  <div class="container label_login">
+                    <label>Usuario</label>
+                  </div>
+                  <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                       <div class="container ">
+                         <img src="\workspace-inicial\img\img_perfil.png" class="icono"> 
+                      </div>
+                    </div>
+                    <input type="email" class="form-control" placeholder="username" id="usuario">
+                  </div>
+                  <div class="container label_alert">
+                    <label class="label_alert" id="label_user"> Ingresa tu email </label>
+                  </div>
+                  <div class="container label_login">
+                    <label>Contraseña</label>
+                  </div>
+                  <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                      <div class="container ">
+                         <img src="https://cdn-icons-png.flaticon.com/512/63/63440.png" class="icono">
+                      </div>
+                    </div>
+                      <input type="password" class="form-control" placeholder="password" id="password"> 
+                  </div>
+                  <div class="container label_alert">
+                    <label class="label_alert" id="label_pass"> Ingresa tu contraseña </label>
+                  </div>
+                  <div class="custom-control custom-checkbox checkbox_login">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline">
+                    <label class="custom-control-label" for="customControlInline">Recordarme</label>
+                    
+                  </div>
+                  <div class="form-group">                              
+                    <input type="submit" class="login_btn" value="Ingresar"> 
+                  </div>
+
+              
+               
+                  <div id="g_id_onload"
+                       data-client_id="800017163944-am4b22fd7theglhvbg6asgmsn4hhlm1l.apps.googleusercontent.com"
+                       data-callback="handleCredentialResponse">
+                  </div>
+                  <div class="container google">
+                  <div class="g_id_signin" data-type="icon" data-theme="filled_blue" data-shape="circle">
+                  </div>
+                </div>
+                    
+                </form>
+                <div class="card-footer">
+                <div class="d-flex justify-content-center links">
+                  No tienes una cuenta? <a href="#"> Registrate aquí </a>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a href="#">Olvidaste tu contraseña?</a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-end">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a> -
+        2022</p>
+      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+    </div>
+  </footer>
+ <script src="js/login.js"></script>
+ <script src="https://accounts.google.com/gsi/client" async defer></script>
+</body>
+
+</html>
