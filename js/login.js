@@ -9,13 +9,13 @@ function changeColor(casilla){
 
 /* Con esta funcion llamamos al DOM, la pagina inicia y extrae los datos del formulario y los valida*/
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("formulario").addEventListener('submit', validarFormulario);
+    document.getElementById("formulario").addEventListener('submit', verificarLogin);
   });
 
 
   /* La funcion validar formulario identifica los inputs de nombre y clave, si estan vacios muestra un error, si estan llenos, envia el formulario y nos redirige a la siguiente ventana */
   
-  function validarFormulario(evento) {
+  function verificarLogin(evento) {
     evento.preventDefault();
     var usuario = document.getElementById('usuario').value;
     if(usuario.length == 0) {
