@@ -15,19 +15,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
   /* La funcion validar formulario identifica los inputs de nombre y clave, si estan vacios muestra un error, si estan llenos, envia el formulario y nos redirige a la siguiente ventana */
   
-  function verificarLogin(evento) {
+   function validarFormulario(evento) {
     evento.preventDefault();
     var usuario = document.getElementById('usuario').value;
+    var inputNombre= document.getElementById('usuario');
+   
     if(usuario.length == 0) {
      alert('El nombre de Usuario no es correcto, verifica e intenta nuevamente');
+     inputNombre.classList.add('is-invalid');
       changeColor("usuario");
       document.getElementById("label_user").style.display = ''; 
       return;
     }
     
     var clave = document.getElementById('password').value;
+    var inputPass= document.getElementById('password');
     if (clave.length < 1) {
       alert('La clave no es válida');
+      inputPass.classList.add('is-invalid');
       changeColor("password");
       document.getElementById('label_pass').style.display = ''; // show 
       return;
