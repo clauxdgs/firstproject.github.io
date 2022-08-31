@@ -9,6 +9,15 @@ const EXT_TYPE = ".json";
 
 //integramos el link del JSON que contiene los autos para el E-commerce
 const AUTOS_URL="https://japceibal.github.io/emercado-api/cats_products/101.json";
+//Integramos todos los URL de todas las categorias
+const JUGUETES_URL="https://japceibal.github.io/emercado-api/cats_products/102.json";
+const MUEBLES_URL="https://japceibal.github.io/emercado-api/cats_products/103.json";
+const HERRAMIENTAS_URL ="https://japceibal.github.io/emercado-api/cats_products/104.json";
+const COMPUTADORAS_URL="https://japceibal.github.io/emercado-api/cats_products/105.json";
+const VESTIMENTA_URL="https://japceibal.github.io/emercado-api/cats_products/106.json";
+const ELECTRODOMESTICOS_URL="https://japceibal.github.io/emercado-api/cats_products/107.json";
+const DEPORTE_URL="https://japceibal.github.io/emercado-api/cats_products/108.json";
+const CELULARES_URL="https://japceibal.github.io/emercado-api/cats_products/109.json";
 
 let showSpinner = function(){
   document.getElementById("spinner-wrapper").style.display = "block";
