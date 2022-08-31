@@ -204,7 +204,7 @@ a.custom-card:hover {
 }
 
 #image_car:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
   cursor:zoom-in;
 }
 
@@ -294,17 +294,19 @@ a.custom-card:hover {
   color: #fff !important;
 }
 .descripcion_productos{
-  width: 50%;
+  width: 80%;
+  font-size: 18px;
+  margin-top: 1rem;
 }
 .imagen_productos{
   background-color:#117A65;
-  width: 80%;
-  margin-left: 30%;
-  margin-top: 10%;
+  width: 100%;
+  padding: auto;
+  margin: 3rem;
 }
 .info_products{
-  margin: 10%;
-  width: 80%;
+  margin: 1rem;
+  width: 25rem;
   font-size: 15px;
 }
 .precio{
@@ -316,17 +318,80 @@ a.custom-card:hover {
 }
 .strong_products{
  color: #117A65;
+ font-weight: bolder;
 }
 .name_products{
  font-weight: bolder; 
  color: #117A65;
- font-size: 45px;
+ font-size: 2.5rem;
+ width: 25rem;
 }
 .contenedor_listado{
- max-width:90%; 
+ width:100%; 
+ height: 25rem;
  border-color:#117A65;
- border: #117A65 3px solid;
+ border: #117A65 5px solid;
+/* border-radius: 15%;*/
 }
 .contenedor_listado:hover{
   background-color: #bde7de;
+}
+.btnfiltrado{
+  color:#45B39D; 
+  background-color:black; 
+  border-radius:15px;
+  width: 85%;
+}
+#contenedor_filtros{
+  text-align: left;
+  margin-left: 3%;
+  width: 97%;
+  display: inline-block;
+}
+
+.inputsfiltro{
+  margin-top: 1%;
+  width:80%;
+  display: inline-block;
+  
+}
+.inputfilter{
+  width: 15%;
+  display: inline-block;
+}
+.inputName{
+  width: 100%;
+  display: inline-block;
+  margin-right: 1px;
+}
+#searchdiv{
+  display: inline-block;
+}
+
+#searchBar{
+  width: 30%;
+  text-align:center ;
+  margin-left: 1px;
+}
+
+#btnfiltro{
+  margin-top: 1%;
+  width: 25%;
+  text-align: right;
+  display: inline;
+}
+.busqueda{
+  margin-top: 1%;
+  width: 20%;
+}
+#contenedor_titulo{
+  width: 100%;
+  text-align: center;
+}
+#titulo_productos{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: 35px;
+ color: #117A65;
+ font-weight: bolder;
+ margin-bottom: 2rem;
 }
