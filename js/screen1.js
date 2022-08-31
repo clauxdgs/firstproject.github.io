@@ -5,6 +5,7 @@ if (localStorage.getItem('Usuario') != null) {
     //localStorage.getItem("key del elemento que queremos obtener")
     usuario=localStorage.getItem('Usuario');
     htmlContentToAppend += ` User:` +" "+ usuario + ``;
+    //escribo el usuario en campousuario
     document.getElementById('campoUsuario').innerHTML=htmlContentToAppend;
     console.log(usuario);
 }
