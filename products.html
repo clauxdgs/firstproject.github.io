@@ -36,16 +36,78 @@
       </div>
     </div>
   </nav>
+
   <main class="pb-5 container">
+    <br><br>
+    <div id="contenedor_titulo">
+      <h1 id="titulo_productos"> Encuentra aqui los mejores productos de la caregoría <label id="labelcat"></label>
+      </h1>
+
+    </div>
+    <div id="contenedor_filtros">
+      <div>
+        <input type="radio" class="btn-check" name="options" id="descendente" checked />
+        <label for="descendente" class="btn btn-dark" style="color: #117864"><i class="fas fa-sort-amount-down mr-1"
+            style="color:white;"></i>Menor Precio</label>
+
+
+        <input type="radio" class="btn-check" name="options" id="ascendente" checked />
+        <label for="ascendente" class="btn btn-dark" style="color: #117864"><i class="fas fa-sort-amount-down mr-1"
+            style="color:white;"></i>Mayor Precio</label>
+
+
+        <input type="radio" class="btn-check" name="options" id="relevancia" checked />
+        <label for="relevancia" class="btn btn-dark" style="color: #117864"><i class="fas fa-sort-amount-down mr-1"
+            style="color:white;"></i>Más Vendidos</label>
+      </div>
+
+      <div class="inputfilter busqueda">
+        <label class="strong_products">Busqueda por precio: </label>
+      </div>
+
+      <div class="inputsfiltro">
+
+        <div class="inputfilter">
+          <input class="form-control" type="number" placeholder="precio mínimo" id="inputmin" />
+        </div>
+        <div class="inputfilter">
+          <input class="form-control" type="number" placeholder="precio máximo" id="inputmax" />
+        </div>
+        <div id="btnfiltro">
+          <div class="inputfilter btnfilter">
+            <button class="btn btn-dark btnfiltrado" id="btn_filtrar">
+              Filtrar
+            </button>
+          </div>
+          <div class="inputfilter btnfilter">
+            <button class="btn btn-dark btnfiltrado" id="btn_limpiar">
+              Limpiar Filtros
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="inputsfiltro" id="searchdiv">
+        <p class="inputfilter busqueda">
+          <label class="strong_products">Escriba para buscar: </label>
+        </p>
+        <!-- <div class="inputName"> -->
+        <input class="form-control inputName" type="text" placeholder="escriba aqui" id="searchBar" />
+        <!-- </div> -->
+      </div>
+    </div>
+
+
+    <br><br>
 
     <!-- CREAMOS UN DIV CONTAINER PARA ALMACENAR LOS DATOS DE LA TABLA QUE CREAMOS CON EL JSON DESDE JS-->
-      <div class="container">
+    <div class="container">
       <div class="row">
-          <div class="list-group" id="car-list-container">
+        <div class="list-group" id="car-list-container">
 
-          </div>
+        </div>
       </div>
-  </div>
+    </div>
   </main>
   <footer class="text-muted">
     <div class="container">
