@@ -101,45 +101,24 @@ function ordenarProductos(criterio, array) {
 
     if (criterio === OPD) {
         arrayOrdenado = array.sort(function (dato1, dato2) {
-            if (dato1.cost < dato2.cost) {
-                return -1;
-            }
-            if (dato1.cost > dato2.cost) {
-                return 1;
-            }
-            return 0;
+          return dato1.cost - dato2.cost;
         });
     
     } //para ordenar por costo ascendente obtenemos el costo de los objetos con .cost y los ordenamos de menor a mayor 
     else if (criterio === OPA) {
 
         arrayOrdenado = array.sort(function (dato1, dato2) {
-            if (dato1.cost < dato2.cost) {
-                return 1;
-            }
-            if (dato1.cost > dato2.cost) {
-                return -1;
-            }
-            return 0;
+          return dato2.cost - dato1.cost;
         });
         
     } 
      //para el orden por relevancia lo que hacemos es obtener la cantidad de unidades vendidas de los productos usando el .souldCount y los comparamos para ordenar de mayor cantidad de vendidos a menor cantidad de vendidos
      else if (criterio === OPR) {
         arrayOrdenado = array.sort(function (dato1, dato2) {
-           
-            let relevancia_dato1 = parseInt(dato1.soldCount);
-            let relevancia_dato2 = parseInt(dato2.soldCount);
-            if (relevancia_dato1 > relevancia_dato2) {
-                return -1;
-            }
-            if (relevancia_dato1 < relevancia_dato2) {
-                return 1;
-            }
-            return 0;
-        });
+                    return dato1.soldCount - dato2.soldCount;})
     }
     ShowCarList(arrayOrdenado);
+  
     
 }
 
