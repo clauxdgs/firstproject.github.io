@@ -115,7 +115,7 @@ function ordenarProductos(criterio, array) {
      //para el orden por relevancia lo que hacemos es obtener la cantidad de unidades vendidas de los productos usando el .souldCount y los comparamos para ordenar de mayor cantidad de vendidos a menor cantidad de vendidos
      else if (criterio === OPR) {
         arrayOrdenado = array.sort(function (dato1, dato2) {
-                    return dato1.soldCount - dato2.soldCount;})
+                    return dato2.soldCount - dato1.soldCount;})
     }
     ShowCarList(arrayOrdenado);
   
